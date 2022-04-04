@@ -1,0 +1,185 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0 ;
+    font-family: 'Fredoka One', cursive;
+}
+a.increased-style{
+    display: flex;
+    align-items: center;
+    height: 10%;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    transition: font-size, 1s;
+}
+a.increased-style:hover{
+    font-size: 100px ; 
+}
+img.icon{
+    height: 40px;
+    width: 40px;
+    transition: height, width, 1s;
+}
+img.icon:hover{
+    height: 60px;
+    width: 60px;
+}
+a.increased-icon{
+    text-decoration: none;
+    color: black;
+}
+
+a.detail-card{
+    text-decoration: none;
+}
+/* ------HEADER---- */
+header{
+    height: 10%;
+    width: 100%;
+    background: linear-gradient(violet, rgb(0, 132, 255)) ;
+}
+img#logo{
+    height: 100px;
+    width: 100px;
+}
+span#title-1{
+    font-size: 50px;
+    color: aliceblue;
+}
+    span#title-2{
+    font-size: xx-large;
+}
+span.title{
+    font-family: 'Fredoka One', cursive;
+}
+/* ------HEADER------ */
+
+/* ---CORPO PRINCIPAL--- */
+main{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+    background: linear-gradient(rgb(0, 132, 255) , white);
+    gap: 10px;
+}
+
+div.music-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 12px;
+
+}
+div.main-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 200px;
+    color: aliceblue;
+    border-radius: 12px;
+    transition: width, height, 1s;
+
+}
+div.main-card:hover{
+   height: 400px;
+   width: 300px;
+}
+img.card-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+span.name{
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    color: black
+    
+
+}
+div.icon-container{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* ---CORPO PRINCIPAL--- */
+
+/*--- Formulario ----- */
+
+form{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    font-family: 'Fredoka One', cursive;
+}
+
+legend{
+    color: aliceblue;
+}
+
+div#submit-container{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-family: 'Fredoka One', cursive;
+}
+/* --- Formulário---- */
+
+/* ---DETAILS--- */
+
+div.det-info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    height: 50%;
+    width: 40%;
+}
+table{
+    font-size: 50px
+}
+td.line{
+    color: violet;
+}
+span.info{
+    color: black;
+}
+img.home-btn{
+    height: 50px;
+    width: 50px;
+    transition: width, height, 1s;
+}
+img.home-btn:hover{
+    width: 70px;
+    height: 70px;
+}
+div.img-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;   
+}
+
+
+
+

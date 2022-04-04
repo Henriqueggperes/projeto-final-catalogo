@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Fredoka+One&family=Signika+Negative:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Details</title>
+    
+</head>
+<body>
+    <%- include("./partials/header.ejs") %>  
+    <main>
+      <div class="img-container">
+        <a href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Botao para voltar a pagina inicial" class="home-btn">
+        </a>
+      </div>
+      <div class="det-info">   
+        <iframe src="https://www.youtube.com/embed/<%= musica.linky %> " frameborder="0"></iframe>
+          <table>
+            <tr>
+              <td class="line" >Musica: <span class="info"><%= musica.nome %></span></td>
+            </tr>
+            <tr>
+              <td class="line">Banda: <span class="info"><%= musica.banda %></span> </td>
+            </tr>
+            <tr>
+              <td class="line">Ano de lançamento: <span class="info"><%= musica.ano %></span> </td> 
+            </tr>
+          </table>
+      </div>
+    </main>
+    <%- include("./partials/footer.ejs") %> 
+</body>
+</html>

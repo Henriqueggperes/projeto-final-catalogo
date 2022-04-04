@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Fredoka+One&family=Signika+Negative:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Catalogo</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo MusicList" id="logo" />
+      <span class="title" id="title-1"> My </span>
+      <span class="title" id="title-2"> MusicList</span>
+    </header>
+    <main>
+        <div class="music-card">
+          <a href="/create" class="increased-style">
+                +
+          </a>
+        </div>
+      <%musicas.forEach(element => { %>
+        <a href="/detalhes/<%= element.id %>" class="detail-card">
+        <div class="main-card">
+            <img src="<%=element.img%> " alt="Musica <%=element.nome%> da banda <%=element.banda%>" class="card-img">  
+            <span class="name"> <%=element.nome%> </span>
+          </div>
+        </a>
+        <div class="icon-container">  
+          <a href="/delete/<%= element.id %>" class="increased-icon"><img src="https://icons-for-free.com/iconfiles/png/512/trash+bin+icon-1320086460670911435.png" alt="Botao deletar" class="icon"> </a> 
+          <a href="/edit/<%= element.id %>" class="increased-icon"><img src="http://simpleicon.com/wp-content/uploads/pencil.png" alt="Botão editar" class="icon"></a> 
+        </div>
+        <% });%>
+
+    </main>
+    <footer>Projeto desenvolvido e realizado por: Henrique Gomes Peres</footer>
+  </body>
+</html>

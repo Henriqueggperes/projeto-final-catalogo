@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Fredoka+One&family=Signika+Negative:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>create</title>
+</head>
+<body>
+    <%- include("./partials/header.ejs") %> 
+    <main>
+      <form action="/create" method="post">
+        <legend> Insira uma nova musica! </legend>
+        <fieldset>
+          <input type="text" name="nome"> 
+          <label for="nome"> Nome da música</label>
+        </fieldset>
+        
+        <fieldset>
+          <input type="text" name="banda">
+          <label for="banda">Nome da banda</label>
+        </fieldset> 
+         
+        <fieldset>
+           <input type="text" name="ano">
+           <label for="ano">Ano em que a musica foi lançada</label>
+          </fieldset> 
+          
+          <fieldset>
+            <input type="text" name="img">
+              <label 
+              for="img"> URL de uma imagem escolhida de sua preferencia. </label>
+             </fieldset>
+           </fieldset> 
+           
+           <fieldset>
+            <input type="text" name="linky" >
+            <label 
+            for="linky">Na url do video do youtube copie os ultimos caractéres que seguem o link apos o "=" e coloque neste espaço </label>
+           </fieldset>
+           
+
+          
+          <div id="submit-container">
+            <button type="submit">Enviar</button>
+          </div>
+      </form>
+    </main>
+    <%- include("./partials/footer.ejs")  %>
+</body>
+</html>
+
