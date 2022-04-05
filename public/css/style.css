@@ -108,7 +108,7 @@ span.name{
     display: flex;
     flex-direction: row;
     font-size: 50px;
-    color: black
+    color: black;
     
 
 }
@@ -121,13 +121,24 @@ div.icon-container{
 /* ---CORPO PRINCIPAL--- */
 
 /*--- Formulario ----- */
+main.form{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 
 form{
+
     display: flex;
-    border: 1px solid black;
+    gap: 2px;
     flex-direction: column;
     font-family: 'Fredoka One', cursive;
 }
+fieldset{
+    border: 1px black solid;
+    border-radius: 12px;
+}
+
 
 legend{
     color: aliceblue;
@@ -145,7 +156,7 @@ button{
 /* ---DETAILS--- */
 
 div.det-info{
-    height: 100%;
+    height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -157,7 +168,7 @@ iframe{
     width: 40%;
 }
 table{
-    font-size: 50px
+    font-size: 50px;
 }
 td.line{
     color: violet;
@@ -176,8 +187,10 @@ img.home-btn:hover{
 }
 div.img-container{
     display: flex;
-    justify-content: flex-end;
-    width: 100%;   
+    justify-content: flex-start;
+    width: 100%;
+    
+
 }
 
 

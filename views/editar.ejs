@@ -12,12 +12,8 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <img src="/img/logo.png" alt="Logo MusicList" id="logo" />
-    <span class="title" id="title-1"> My </span>
-    <span class="title" id="title-2"> MusicList</span>
-  </header>
-  <main>
+  <%- include("./partials/header.ejs") %> 
+  <main class="form">
     <form action="/edit/<%= musica.id%> " method="post">
       <legend> Editar <%= musica.nome %>  </legend>
       <fieldset>
