@@ -96,8 +96,8 @@ div.main-card{
 
 }
 div.main-card:hover{
-   height: 400px;
-   width: 300px;
+   height: 350px;
+   width: 250px;
 }
 img.card-img{
     height: 100%;
@@ -105,9 +105,10 @@ img.card-img{
     border-radius: 12px;
 }
 span.name{
+    height: 10%;
     display: flex;
     flex-direction: row;
-    font-size: 50px;
+    font-size: 25px;
     color: black;
     
 
@@ -135,7 +136,7 @@ form{
     font-family: 'Fredoka One', cursive;
 }
 fieldset{
-    border: 1px black solid;
+    border: 1px blueviolet solid;
     border-radius: 12px;
 }
 
